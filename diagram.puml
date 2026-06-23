@@ -1,0 +1,91 @@
+@startuml
+title Secure Video Recording System - General Sequence Diagram
+
+actor User
+
+participant "Video Source / Camera" as Camera
+participant "YOLOv8 Engine" as YOLO
+participant "Web Server" as Server
+participant "Authentication Module" as Auth
+participant "Crypto Module\n(AES-256-CBC + PBKDF2)" as Crypto
+participant "Storage\n(.mp4.enc files)" as Storage
+participant "Download Manager" as Download
+
+== Recording Phase ==
+
+loop Continuous Surveillance
+    Camera -> YOLO : Video frames
+    YOLO -> YOLO : Object detection
+    YOLO -> YOLO : Detect human (confidence > 80%)
+
+    alt Human detected
+        YOLO -> YOLO : Start recording
+        YOLO -> YOLO : Record video clip (30 sec)
+        YOLO -> Server : Recorded video clip
+
+        Server -> Crypto : Raw video data
+
+        Crypto -> Crypto : Generate key using PBKDF2
+        Crypto -> Crypto : Generate random IV
+        Crypto -> Crypto : Encrypt using AES-256-CBC
+
+        Crypto -> Storage : Save encrypted file (.mp4.enc)
+
+    else No human detected
+        YOLO -> YOLO : Continue monitoring
+    end
+end
+
+== Playback Phase ==
+
+User -> Server : Login request
+Server -> Auth : Verify credentials
+Auth --> Server : Authentication success
+Server --> User : Session cookie
+
+User -> Server : Request video list
+
+Server -> Storage : Retrieve encrypted videos
+Storage --> Server : List of .mp4.enc files
+
+Server --> User : Display available videos
+
+User -> Server : Select video
+Server --> User : Request decryption password
+
+User -> Server : Submit password
+
+Server -> Storage : Retrieve encrypted file
+Storage --> Server : Encrypted video data
+
+Server -> Crypto : Send encrypted data + password
+
+Crypto -> Crypto : Derive key (PBKDF2)
+Crypto -> Crypto : Extract IV (first 16 bytes)
+Crypto -> Crypto : AES-256-CBC decryption
+Crypto -> Crypto : Remove PKCS7 padding
+
+Crypto --> Server : Decrypted video stream
+
+Server --> User : Stream video
+User -> User : Watch video in HTML5 player
+
+== Download Phase ==
+
+User -> Server : Click "Download Video"
+
+Server -> Storage : Retrieve encrypted file
+Storage --> Server : Encrypted video
+
+Server -> Crypto : Decrypt video using password
+
+Crypto -> Crypto : Derive key (PBKDF2)
+Crypto -> Crypto : Extract IV
+Crypto -> Crypto : AES-256-CBC decryption
+
+Crypto --> Server : Decrypted video file
+
+Server -> Download : Send decrypted file
+Download --> User : Download playable MP4 file
+
+@enduml

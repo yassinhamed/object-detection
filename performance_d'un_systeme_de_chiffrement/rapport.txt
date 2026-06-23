@@ -1,0 +1,30 @@
+NPCR           UACI       Corolation           entropy          histogram      temp d'ex 
+
+ python image_encryption.py mr_robot.jpg mr_robot.jpg.enc 
+ (uses standard PKCS7 padding applied once to the full plaintext, ensuring proper AES-CBC behavior and statistically random ciphertext)
+
+ python image_decryption.py mr_robot.jpg.enc
+ (Decryption is required to validate that the encryption process is reversible and lossless, ensuring data integrity in AES-CBC systems)
+
+ python npcr_encrypted_bytes.py mr_robot.jpg mr_robot.jpg.enc
+ (NPCR is computed between the original image and the encrypted byte stream mapped to pixel space. A high NPCR value (~99%) indicates that a single pixel change in the original image results in significant changes in the encrypted output, demonstrating strong diffusion properties of AES-CBC.)
+
+ python uaci_calculator.py mr_robot.jpg mr_robot.jpg.enc   
+ (“Since AES-CBC produces binary ciphertext without spatial structure, classical UACI is not applicable. Therefore, a byte-level variation index is used to estimate randomness between the original image and encrypted output.”)
+ 
+ python correlation_compare.py mr_robot.jpg mr_robot.jpg_decrypted.jpg
+ (A correlation of 1 between original and decrypted images confirms that the encryption system is lossless and fully reversible, ensuring data integrity.)
+
+ python entropy_analyzer.py mr_robot.jpg mr_robot.jpg.enc
+ (The entropy of the encrypted data reaches 7.999 bits, which is very close to the theoretical maximum of 8 bits, indicating that the ciphertext behaves as a random distribution. This confirms the robustness of the AES-CBC encryption scheme against statistical attacks.)
+
+ python histogram.py mr_robot.jpg mr_robot.jpg.enc
+ (The histogram of the encrypted image shows a uniform distribution of byte values, indicating that the encryption process successfully removes statistical patterns present in the original image)
+
+ python encryption_time.py mr_robot.jpg 
+ python decryption_time.py mr_robot.jpg.enc    
+ (“The execution time of the AES-CBC encryption and decryption process was measured to evaluate the performance of the proposed system. Results show that the algorithm operates efficiently even on large image files, making it suitable for real-time applications.”)
+
+
+ ECB enctime / dectime 
+ 

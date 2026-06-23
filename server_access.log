@@ -1,0 +1,62 @@
+[2026-05-30 16:39:05] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 16:39:12] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 16:39:21] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 16:39:43] IP:192.168.227.1 | User:admin | ACTION:Downloaded Video: recording_20260429_222431.mp4 | STATUS:SUCCESS
+[2026-05-30 16:40:53] IP:127.0.0.1 | User:admin | ACTION:Logout | STATUS:SUCCESS
+[2026-05-30 16:41:47] IP:192.168.227.1 | User:admin | ACTION:Downloaded Video: recording_20260429_222431.mp4 | STATUS:SUCCESS
+[2026-05-30 16:45:20] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 16:45:28] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 16:45:32] IP:127.0.0.1 | User:admin | ACTION:Logout | STATUS:SUCCESS
+[2026-05-30 16:46:43] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 16:46:48] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 16:47:05] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 16:47:20] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 16:48:49] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:16:55] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 19:17:05] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:20:42] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:21:29] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:23:11] IP:127.0.0.1 | User:admin | ACTION:Logout | STATUS:SUCCESS
+[2026-05-30 19:45:01] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 19:45:05] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:45:14] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:45:46] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 19:45:49] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:45:54] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:46:04] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:49:01] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 19:54:03] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 19:54:08] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:54:19] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:54:29] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:54:46] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:56:44] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:57:07] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 19:57:13] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:57:13] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 19:57:22] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:57:22] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 19:57:29] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-01.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:57:30] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 19:57:40] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:57:40] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 19:57:47] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 19:57:48] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:30:03] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 21:32:55] IP:127.0.0.1 | Unauthenticated | ACTION:Login (username: 'admin', password: 'secure123') | STATUS:SUCCESS
+[2026-05-30 21:32:59] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:32:59] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:33:29] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:33:29] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:33:35] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:33:35] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:33:37] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:33:38] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:33:51] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:33:51] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:34:40] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:34:41] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:36:07] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:36:07] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS
+[2026-05-30 21:36:19] IP:127.0.0.1 | User:admin | ACTION:Downloaded Encrypted Video: recording_2026-05-04_15-05-58.mp4.enc | STATUS:SUCCESS
+[2026-05-30 21:36:20] IP:127.0.0.1 | User:admin | ACTION:Decrypted video via API | STATUS:SUCCESS

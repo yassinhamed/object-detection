@@ -1,0 +1,92 @@
+@startuml
+skinparam backgroundcolor #0B131F
+skinparam Handwritten false
+
+' Default styling for standard elements (Blue Theme)
+skinparam UseCase {
+    BackgroundColor #2A4B7C
+    BorderColor #5A8BDF
+    FontColor #FFFFFF
+    FontSize 14
+}
+
+' Target styling for backend pipeline elements via stereotype (Green Theme)
+skinparam UseCase<<backend>> {
+    BackgroundColor #2D6A4F
+    BorderColor #52B788
+}
+
+skinparam Actor {
+    BackgroundColor #0B131F
+    BorderColor #FFFFFF
+    FontColor #FFFFFF
+}
+
+skinparam Arrow {
+    Color #FFFFFF
+    FontColor #FFFFFF
+    FontSize 11
+}
+
+skinparam Rectangle {
+    BorderColor #5A8BDF
+    FontColor #5A8BDF
+    BackgroundColor transparent
+}
+
+left to right direction
+
+actor "User" as user
+
+rectangle "Secure Video Recording System" {
+    ' Left Side - User Interactions
+    usecase "Login" as login
+    usecase "Authenticate User" as auth
+    usecase "View Video List" as view
+    
+    usecase "Play Video" as play
+    usecase "Enter Decryption Password" as password
+    usecase "Decrypt Video" as decrypt
+    usecase "Stream Video" as stream
+    
+    usecase "Download\nDecrypted Video" as download
+    usecase "Decrypted Video\nDownloaded" as downloaded
+    
+    usecase "Logout" as logout
+
+    ' Right Side - Background System Processing (Styled safely using stereotypes)
+    usecase "Record Video\nStream" as record <<backend>>
+    usecase "Object Detection\n(YOLOv8)" as yolo <<backend>>
+    usecase "Encrypt Video\n(AES-256-CBC)" as encrypt <<backend>>
+    usecase "Store Encrypted\nVideo (.mp4.enc)" as store <<backend>>
+}
+
+actor "Video Source /\nCamera" as camera #0B131F;text:green
+
+' User Associations
+user --> login
+user --> view
+user --> play
+user --> download
+user --> logout
+
+' Include relationships for authentication
+login ..> auth : <<include>>
+
+' Play Video Security Chain
+play ..> password : <<include>>
+password ..> decrypt : <<include>>
+decrypt ..> stream : <<include>>
+
+' Download Video Security Chain 
+download ..> password : <<include>>
+password ..> decrypt : <<include>>
+decrypt ..> downloaded : <<include>>
+
+' Camera/Backend Processing Pipeline
+camera --> record
+record ..> yolo : <<include>>
+yolo ..> encrypt : <<include>>
+encrypt ..> store : <<include>>
+
+@enduml

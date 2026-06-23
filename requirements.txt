@@ -1,0 +1,26 @@
+# Video Recording & Remote Access Requirements
+# For YOLO object detection with remote streaming and downloading
+# Tested with Python 3.8+
+
+# Video & Image Processing
+opencv-python>=4.5.0
+numpy>=1.19.0
+
+# Audio Recording
+sounddevice>=0.4.5
+soundfile>=0.10.3
+
+# Object Detection
+ultralytics>=8.0.0
+
+# Remote Access (Client)
+requests>=2.26.0
+
+# Encryption (AES)
+cryptography>=41.0.0
+
+# Optional: FFmpeg-based video encoding
+imageio-ffmpeg>=0.4.5
+
+# Optional: Interactive CLI
+
